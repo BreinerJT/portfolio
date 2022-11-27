@@ -1,0 +1,57 @@
+---
+import GithubButton from './GithubButton.astro'
+import ExternalButton from './ExternalButton.astro'
+
+export interface Props {
+	title: string;
+	body: string;
+  image: string;
+	link: string;
+	demo: string;
+}
+
+const { link, demo, image, title, body } = Astro.props;
+---
+
+<article class='py-4 px-2 w-[300px] md:w-80 rounded-lg hover:bg-gray-800 transition-colors inline-block effect-shine [&:hover>div>a]:block [&:hover>div>h3]:text-red-300'>
+  <div class='grid gap-2 mb-4'>
+    <img src={image} class="rounded-lg aspect-[2/1] object-contain mx-auto shadow-md" alt={`${title} preview.`} />
+    <h2 class="text-xl md:text-2xl font-bold">{title}</h2>
+    <h3 class="text-sm font-bold text-gray-500 leading-relaxed transition-colors">{body}</h3>
+  </div>
+  <div class='flex gap-8 justify-center items-center h-[32px] [&>a]:block lg:[&>a]:hidden'>
+    <GithubButton href={link} />
+    <ExternalButton href={demo} />
+  </div>
+</article>
+<style>
+	.effect-shine {
+  --shine-opacity: 0;
+  position: relative;
+  overflow: hidden;
+  transform: scale3d(1, 1, 1);
+  transition: all 0.2s ease-out;
+}
+
+.effect-shine:hover {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.7);
+  transform: scale3d(1.03, 1.03, 1);
+}
+
+.effect-shine::after {
+  content: "";
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), hsla(0, 0%, 100%, var(--shine-opacity)), rgba(255, 255, 255, 0));
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  width: 10em;
+  overflow: hidden;
+  transform: translateX(-100%) rotate(35deg);
+}
+
+.effect-shine:hover::after {
+  transition: transform 0.2s ease-out;
+  transform: translateX(380px) rotate(35deg);
+  --shine-opacity: 0.5;
+}
+</style>
