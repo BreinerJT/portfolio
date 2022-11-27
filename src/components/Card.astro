@@ -15,7 +15,7 @@ const { link, demo, image, title, body } = Astro.props;
 
 <article class='py-4 px-2 w-[300px] md:w-80 rounded-lg hover:bg-gray-800 transition-colors inline-block effect-shine [&:hover>div>a]:block [&:hover>div>h3]:text-red-300'>
   <div class='grid gap-2 mb-4'>
-    <img src={image} class="rounded-lg aspect-[2/1] object-contain mx-auto shadow-md" alt={`${title} preview.`} />
+    <img src={image} class="w-[304px] h-[152px] rounded-lg object-contain mx-auto shadow-md" alt={`${title} preview.`} />
     <h2 class="text-xl md:text-2xl font-bold">{title}</h2>
     <h3 class="text-sm font-bold text-gray-500 leading-relaxed transition-colors">{body}</h3>
   </div>
