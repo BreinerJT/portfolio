@@ -1,0 +1,18 @@
+---
+interface Props {
+  name: string
+  img: string
+  href: string
+}
+
+const { name, img, href } = Astro.props
+---
+
+<a class='md:flex md:items-center font-bold md:tracking-wide text-md lg:text-lg' href={ href }>
+  <span class="sm:hidden">
+    <img src={ img } alt={`Icono de ${ name }.`}>
+  </span>
+  <span class="hidden sm:block">
+    { name }
+  </span>
+</a>

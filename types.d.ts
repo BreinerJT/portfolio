@@ -7,7 +7,7 @@ export type Project = {
 }
 
 export type NavbarItem = {
-  icon: string
-  item: string
-  scroll: string
+  name: string
+  img: string
+  href: string
 }

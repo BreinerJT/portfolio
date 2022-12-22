@@ -1,4 +1,4 @@
-import type { Project } from '../types'
+import type { NavbarItem, Project } from '../types'
 
 export const projects: Project[] = [
 	{
@@ -28,5 +28,23 @@ export const projects: Project[] = [
 		image: './pokedex.webp',
 		link: 'https://github.com/BreinerJT/next-pokemon-static',
 		title: 'Next Pokédex'
+	}
+]
+
+export const navbarItems: NavbarItem[] = [
+	{
+		href: '#',
+		img: './public/assets/homeIcon.png',
+		name: 'Inicio'
+	},
+	{
+		href: '#about',
+		img: './public/assets/personIcon.png',
+		name: 'Sobre mi'
+	},
+	{
+		href: '#projects',
+		img: './public/assets/projectsIcon.png',
+		name: 'Proyectos'
 	}
 ]
