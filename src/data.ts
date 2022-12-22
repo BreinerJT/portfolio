@@ -5,7 +5,7 @@ export const projects: Project[] = [
 		body: 'Facilita la adopción de mascotas mediante la publicación de las mismas y la comunicación mediante chat de los usuarios.',
 		demo: 'https://petfinder-front.vercel.app/',
 		image: './petfinder.webp',
-		link: 'https://github.com/BreinerJT/petfinder-front',
+		link: 'https://github.com/BreinerJT/petfinder',
 		title: 'Petfinder'
 	},
 	{
