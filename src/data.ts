@@ -34,17 +34,17 @@ export const projects: Project[] = [
 export const navbarItems: NavbarItem[] = [
 	{
 		href: '#',
-		img: './public/assets/homeIcon.png',
+		img: './assets/homeIcon.png',
 		name: 'Inicio'
 	},
 	{
 		href: '#about',
-		img: './public/assets/personIcon.png',
+		img: './assets/personIcon.png',
 		name: 'Sobre mi'
 	},
 	{
 		href: '#projects',
-		img: './public/assets/projectsIcon.png',
+		img: './assets/projectsIcon.png',
 		name: 'Proyectos'
 	}
 ]
