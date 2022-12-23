@@ -6,15 +6,12 @@ export interface Props {
 const { circular } = Astro.props
 ---
 
-<a class={`[&:hover>svg]:opacity-100 ${circular ? 'bg-gray-400 p-[0.75rem] rounded-full' : '' }`} href='https://www.linkedin.com/in/breinerjtorres' rel='noopener' target='_blank' aria-label='linkedIn profile link.'>
-  <svg class='opacity-70 transition-opacity duration-300' x='0px' y='0px' height='32px' width='32px' viewBox='0 0 32 32'>
-    <g>
-      <path d='M17.303,14.365c0.012-0.015,0.023-0.031,0.031-0.048v0.048H17.303z M32,0v32H0V0H32L32,0z M9.925,12.285H5.153v14.354
-        h4.772V12.285z M10.237,7.847c-0.03-1.41-1.035-2.482-2.668-2.482c-1.631,0-2.698,1.072-2.698,2.482
-        c0,1.375,1.035,2.479,2.636,2.479h0.031C9.202,10.326,10.237,9.222,10.237,7.847z M27.129,18.408c0-4.408-2.355-6.459-5.494-6.459
-        c-2.531,0-3.664,1.391-4.301,2.368v-2.032h-4.77c0.061,1.346,0,14.354,0,14.354h4.77v-8.016c0-0.434,0.031-0.855,0.157-1.164
-        c0.346-0.854,1.132-1.746,2.448-1.746c1.729,0,2.418,1.314,2.418,3.246v7.68h4.771L27.129,18.408L27.129,18.408z'/>
-    </g>
-    <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
-  </svg>
+<a 
+  class={`grid items-center lg:[&>svg]:grayscale [&:hover>svg]:grayscale-0 ${circular ? 'bg-gray-400 p-[0.75rem] rounded-full border-2 border-transparent hover:bg-inherit hover:border-cyan-400' : 'scale-125' }`} 
+  href='https://www.linkedin.com/in/breinerjtorres' 
+  rel='noopener' 
+  target='_blank' 
+  aria-label='linkedIn profile link.'
+>    
+  <svg x='0px' y='0px' height='32px' width='32px' viewBox="0 0 48 48"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"/><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"/></svg>
 </a>

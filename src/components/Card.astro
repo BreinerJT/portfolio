@@ -20,7 +20,7 @@ const { link, demo, image, title, body } = Astro.props;
     <p class="text-sm font-bold text-gray-400 leading-relaxed transition-colors">{body}</p>
   </div>
   <div class='flex gap-8 justify-center items-center h-[32px] [&>a]:block lg:[&>a]:hidden'>
-    <GithubButton href={link} />
+    <GithubButton cardButton href={link} />
     <ExternalButton href={demo} />
   </div>
 </article>
