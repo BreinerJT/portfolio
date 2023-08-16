@@ -1,4 +1,4 @@
-import type { NavbarItem, Project } from '../types'
+import type { NavbarItem, Project, Experience } from '../types'
 
 export const projects: Project[] = [
 	{
@@ -46,5 +46,19 @@ export const navbarItems: NavbarItem[] = [
 		href: '#projects',
 		img: './assets/projectsIcon.png',
 		name: 'Proyectos'
+	}
+]
+
+export const experiences: Experience[] = [
+	{
+		accomplishments: [
+			'Apliqué estrategias de trabajo en equipo con personas involucradas en el desarrollo de un proyecto para preservar la calidad del producto y acelerar el desarrollo del mismo promoviendo constante programación en par y en grupo.',
+			'Mejoré tiempos de carga de páginas desde milisegundos hasta segundos realizando peticiones en paralelo, reduciendo código javascript, reemplazando librerías por alternativas más livianas, entre otras.',
+			'Mejoré la autenticación y protección de rutas privadas en paneles de acuerdo a sesiones o roles de usuario mediante componentes de orden superior encargados de validar lo necesario.'
+		],
+		start: 'Enero, 2023',
+		end: 'Julio, 2023',
+		place: 'Peacedev S.A.S',
+		role: 'Desarrollador frontend'
 	}
 ]
