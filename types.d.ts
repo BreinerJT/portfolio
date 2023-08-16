@@ -11,3 +11,11 @@ export type NavbarItem = {
   img: string
   href: string
 }
+
+export interface Experience {
+  place: string
+  start: string
+  end: string
+  accomplishments: string[]
+  role: string
+}
